@@ -1,0 +1,175 @@
+.homePage {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 96px;
+  height: 960px;
+  margin: 32px;
+  padding: 32px;
+  border-radius: 20px;
+  background: rgb(22, 29, 47);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navImg:focus {
+  color: white;
+}
+
+.navImg path {
+  fill: #fc4747;
+}
+
+#icon {
+  margin-bottom: 35px;
+  width: 32px;
+  height: 25.6px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.container {
+  margin-top: 64px;
+  width: 1340px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchInput {
+  display: flex;
+  gap: 28px;
+}
+
+.searchInput input {
+  width: 1184px;
+  height: 46px;
+  font-size: 24px;
+  color: #fff;
+  background-color: inherit;
+  outline: none;
+  opacity: 50%;
+  border: none;
+  border-bottom: 1px solid #10141e;
+}
+
+.searchInput input:focus {
+  border-bottom: 1px solid #5a698f;
+}
+
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 280px;
+  height: 226px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover .card-img {
+  opacity: 0.5;
+}
+
+.card-wrapper:hover .play {
+  opacity: 1;
+}
+
+.play {
+  position: absolute;
+  top: 83px;
+  right: 34px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 280px;
+  height: 174px;
+  transition: opacity 0.3s ease;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mark {
+  z-index: 2;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.movie {
+  width: 12px;
+  color: #fff;
+}
+
+.content h4 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.container h1 {
+  margin-top: 34px;
+  margin-bottom: 25px;
+}
+
+.year-type {
+  opacity: 75%;
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.whiteMovie {
+  margin-right: -2px;
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}
+
+.form {
+  display: flex;
+  gap: 24px;
+}
+
+.form img {
+  cursor: pointer;
+}
+
+.navLink,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
